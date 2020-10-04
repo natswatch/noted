@@ -1,14 +1,24 @@
 {
-    "notes": [
+  "notes": [
     {
-        "title":"Landing Page",
-        "text":"link to notes page", 
-        "id": "0"
+      "title": "Landing Page",
+      "text": "link to notes page",
+      "id": "0"
     },
     {
-        "title":"Existing Notes",
-        "text":"display to the left", 
-        "id": "1"
+      "title": "Existing Notes",
+      "text": "display to the left",
+      "id": "1"
+    },
+    {
+      "title": "c3po",
+      "text": "C3PO",
+      "id": "2"
+    },
+    {
+      "title": "Nathlie",
+      "text": "is awesome",
+      "id": "3"
     }
-    ]
+  ]
 }

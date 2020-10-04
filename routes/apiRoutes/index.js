@@ -2,7 +2,7 @@ const {
     filterByQuery,
     findById,
     createNewNote,
-    validateNewNote
+    validateNote
 } = require('../../lib/notes')
 const router = require('express').Router();
 const { notes } = require('../../db/db.json');
