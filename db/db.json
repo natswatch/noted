@@ -1,0 +1,14 @@
+{
+    "notes": [
+    {
+        "title":"Landing Page",
+        "text":"link to notes page", 
+        "id": "0"
+    },
+    {
+        "title":"Existing Notes",
+        "text":"display to the left", 
+        "id": "1"
+    }
+    ]
+}
