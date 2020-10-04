@@ -1,24 +1,14 @@
 {
   "notes": [
     {
-      "title": "Landing Page",
-      "text": "link to notes page",
+      "title": "New note",
+      "text": "save icon appears",
       "id": "0"
     },
     {
-      "title": "Existing Notes",
-      "text": "display to the left",
+      "title": "Existing notes",
+      "text": "displays to the left",
       "id": "1"
-    },
-    {
-      "title": "c3po",
-      "text": "C3PO",
-      "id": "2"
-    },
-    {
-      "title": "Nathlie",
-      "text": "is awesome",
-      "id": "3"
     }
   ]
 }

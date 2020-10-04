@@ -55,10 +55,12 @@ var handleNoteSave = function() {
     title: $noteTitle.val(),
     text: $noteText.val()
   };
-
+  
   saveNote(newNoteObject).then(function(data) {
     getAndRenderNotes();
     renderActiveNote();
+
+    alert('Note saved!');
   });
 };
 
@@ -78,6 +80,8 @@ var handleNoteDelete = function(event) {
   deleteNote(note.id).then(function() {
     getAndRenderNotes();
     renderActiveNote();
+    
+    alert('Note deleted!');
   });
 };
 
@@ -128,6 +132,7 @@ var renderNoteList = function(notes) {
 // Gets notes from the db and renders them to the sidebar
 var getAndRenderNotes = function() {
   return getNotes().then(function(data) {
+    
     renderNoteList(data);
   });
 };
@@ -138,6 +143,7 @@ $newNoteBtn.on("click", handleNewNoteView);
 $noteList.on("click", ".delete-note", handleNoteDelete);
 $noteTitle.on("keyup", handleRenderSaveBtn);
 $noteText.on("keyup", handleRenderSaveBtn);
+
 
 // Gets and renders the initial list of notes
 getAndRenderNotes();

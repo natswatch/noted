@@ -3,7 +3,8 @@ const {
     filterByQuery,
     findById,
     createNewNote,
-    validateNote
+    validateNote,
+    deleteNote
 } = require('../lib/notes.js');
 const { notes } = require("../db/db");
 
@@ -71,4 +72,22 @@ test("validates text", () => {
     expect(result).toBe(true);
     expect(result2).toBe(false);
 });
+
+test("deletes note", () => {
+    const preNote = [
+        {
+            title: "Landing Page",
+            text: "link to a notes page",
+            id: "2",
+        },
+        {
+            title: "Existing Notes",
+            text: "listed on the left",
+            id: "3",
+        },
+    ]
+    const result = deleteNote("2", preNote);
+
+    expect(result.length).toBe(1);
+})
 
